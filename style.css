@@ -1,20 +1,24 @@
 tbody th {
-	font-weight: normal;	/*http://www.w3.org/TR/css3-fonts/ describes font-weight*/
-	font-style: italic;
+  font-weight: normal;	/*http://www.w3.org/TR/css3-fonts/ describes font-weight*/
+  font-style: italic;
 }
 
-tbody > tr > td:nth-child(2) {
-	color: red;
+tbody > tr > td:nth-of-type(1) {
+  color: red;
 }
 
-tbody > tr > td:nth-child(4) {
-	color: blue;
+tbody > tr > td:nth-of-type(3) {
+  color: blue;
 }
 
 tbody > tr:nth-child(2n+1){
-	background-color: lightgreen;
+  background-color: lightgreen;
 }
 
 tbody > tr:nth-child(2n){
-	background-color: lightblue;
+  background-color: lightblue;
+}
+
+dt:hover + dd{
+  background-color: purple;
 }
