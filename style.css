@@ -1,3 +1,7 @@
+table, td, th { 
+  border: 1px solid gray;
+}
+
 tbody th {
   font-weight: normal;	/*http://www.w3.org/TR/css3-fonts/ describes font-weight*/
   font-style: italic;
