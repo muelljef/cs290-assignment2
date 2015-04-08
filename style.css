@@ -1,30 +1,50 @@
 table, 
 td, 
-th { 
+th {                    /*Recommendation from CSS validator, http://www.css-validator.org/#validate-by-input*/ 
   border: 1px solid gray;
 }
 
 tbody th {
-  font-weight: normal;	/*http://www.w3.org/TR/css3-fonts/ describes font-weight*/
   font-style: italic;
+  font-weight: normal;	/*http://www.w3.org/TR/css3-fonts/ describes font-weight*/
 }
 
-tbody > tr > td:nth-of-type(1) {
+tbody > tr > td:nth-of-type(1) {  /*From Mozilla Developers site https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors*/
   color: red;
 }
 
-tbody > tr > td:nth-of-type(3) {
+tbody > tr > td:nth-of-type(3) {  /*From Mozilla Developers site https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors*/
   color: blue;
 }
 
-tbody > tr:nth-child(2n+1){
+tbody > tr:nth-child(2n+1){     /*From Mozilla Developers site https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors*/
   background-color: lightgreen;
 }
 
-tbody > tr:nth-child(2n){
+tbody > tr:nth-child(2n){       /*From Mozilla Developers site https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors*/
   background-color: lightblue;
 }
 
 dt:hover + dd{
   background-color: purple;
+}
+
+.outer-content{
+  background-color: pink;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.inner-content{
+  background-color: blue;
+  color: white;
+  margin-left: auto;  /*http://stackoverflow.com/questions/114543/horizontally-center-a-div-in-a-div margins from site */
+  margin-right: auto;
+  width: 75%;
+}
+
+img {
+  float: left;        /*From lecture*/
+  height: 125px;      /*http://www.w3.org/TR/html5/embedded-content-0.html#the-img-element*/
+  width: 100px;
 }
